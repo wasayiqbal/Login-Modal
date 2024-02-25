@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              fontFamily: {
+                  sans: ['Mulish', 'sans-serif'],
+                  mono: ['Rokkitt', 'mono-space']
+              }
+          }
+      }
+  </script>
+</head>
+<body>
+    <!--Main Div-->
+    <div class="flex items-center justify-center bg-red-50 min-h-screen">
+        <!--Card-->
+        <div class="relative flex flex-col md:flex-row m-6 md:m-0 space-y-10 md:space-y-0 bg-white rounded-2xl shadow-2xl">
+            
+            <!--Left-->
+            <div class="p-6 md:p-20">
+                <h2 class="text-5xl mb-6 font-bold font-mono">Log In</h2>
+                <p class="max-w-sm mb-12 text-sm mt-6 font-sans text-gray-400">Log in to your account to upload or download pictures, videos or music</p>
+                <input type="search" class="border border-gray-300 p-6 w-full rounded-xl focus:outline-none" placeholder="Enter your email address">
+                <div class="flex flex-col mt-6 items-center justify-between space-y-6 md:space-y-0 md:flex-row">
+                <div class="text-center p-6 text-cyan-700">Forgot Passowrd ?</div>
+                <button class= "flex justify-center items-center bg-cyan-700 p-6 px-9 w-full md:w-auto rounded-lg text-white text-lg font-serif hover:opacity-90 hover:-translate-y-0.5 transition duration-200 hover:shadow-2xl shadow-cyan-400">
+                    <span>Next</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-7"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="13" y1="18" x2="19" y2="12" />
+                    <line x1="13" y1="6" x2="19" y2="12" />
+                  </svg>
+                </button>
+            </div>
+            <div class="border-b border-b-gray-300 mt-12"></div>
+            <p class="text-center text-sm text-gray-400 py-6">or login with</p>
+            <div class="flex flex-col space-y-6 space-x-0 md:flex-row md:space-y-0 md:space-x-6">
+                    <button class="flex items-center justify-center py-4 border space-x-3 rounded-lg border-gray-300 w-full hover:-translate-y-0.5 hover:shadow-2xl transition duration-200">
+                        <img src="./facebook.png" alt=""class="w-9">
+                        <span>Facebook</span>
+                    </button>
+                    <button class="flex items-center justify-center py-4 border space-x-3 rounded-lg border-gray-300 w-full hover:-translate-y-0.5 hover:shadow-2xl transition duration-200">
+                        <img src="./google.png" alt=""class="w-9">
+                        <span>Google</span>
+                    </button>
+                </div>
+            </div>
+            <!--Right-->
+            <img src="./image.jpg" alt="" class="w-[430px] hidden md:block">
+            <div class="group absolute p-2 -top-5 right-4 flex items-center justify-center bg-gray-200 md:bg-white rounded-full md:top-4 hover:-translate-y-0.5 duration-200 hover:cursor-pointer">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
